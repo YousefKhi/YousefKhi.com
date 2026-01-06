@@ -28,6 +28,14 @@ export default function RootLayout({
                 if (theme === 'dark') {
                   document.documentElement.classList.add('dark');
                 }
+                // Prevent browser scroll restoration
+                if ('scrollRestoration' in history) {
+                  history.scrollRestoration = 'manual';
+                }
+                // Scroll to top on fresh page load
+                if (!window.location.hash) {
+                  window.scrollTo(0, 0);
+                }
               } catch (e) {}
             `,
           }}
