@@ -7,9 +7,19 @@ import ClientLayout from '@/components/ClientLayout'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Yousef Khirallah | Mechatronics Engineer',
-  description: 'Portfolio of Yousef Khirallah - Mechatronics Engineering student specializing in robotics, embedded systems, and mechanical design.',
-  keywords: 'Mechatronics, Engineering, Robotics, Portfolio, SolidWorks, Python, React',
+  title: 'Yousef Khirallah Portfolio',
+  description: '',
+  openGraph: {
+    title: 'Yousef Khirallah Portfolio',
+    description: '',
+    images: [],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Yousef Khirallah Portfolio',
+    description: '',
+    images: [],
+  },
 }
 
 export default function RootLayout({
